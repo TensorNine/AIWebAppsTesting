@@ -75,12 +75,11 @@ Important: Replace the placeholder values. Never share your .env file!
 Configure AI Model and Allowed Domains:
 Open config.py and adjust the LLM_MODEL and ALLOWED_DOMAINS variables. ALLOWED_DOMAINS is crucial for security, restricting where the agent can navigate.
 
-# config.py
-# ...
-LLM_MODEL = "gemini-2.5-flash"
+## config.py
 
-# CRITICAL: Define domains the agent is allowed to visit for security
-ALLOWED_DOMAINS = ['http://localhost:8501', 'http://localhost:8501/*']
+  LLM_MODEL = "gemini-2.5-flash"
+  #CRITICAL: Define domains the agent is allowed to visit for security
+  ALLOWED_DOMAINS = ['http://localhost:8501', 'http://localhost:8501/*']
 
 📝 How to Write Your Tests
 Your test instructions are defined in testcases.csv. Each row represents a test scenario.
