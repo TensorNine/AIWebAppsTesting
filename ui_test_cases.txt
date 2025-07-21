@@ -1,0 +1,50 @@
+# UI Test Cases
+
+## Authentication
+
+1.  **Successful Login:**
+    *   Description: Verify the user can successfully log in with valid credentials.
+    *   Steps:
+        1. Brower http://localhost:8501
+        1.  Enter valid username(TEST_USER) and password(TEST_PASSWORD) in the login form.
+        2.  Click the "Login" button.
+    *   Expected Result: User is redirected to the dashboard.
+
+2.  **Failed Login (Invalid Credentials):**
+    *   Description: Verify the user receives an error message when logging in with invalid credentials.
+    *   Steps:
+        1.  Enter invalid username and password in the login form.
+        2.  Click the "Login" button.
+    *   Expected Result: An error message "Invalid username or password" is displayed.
+
+3.  **Successful Logout:**
+    *   Description: Verify the user can successfully log out.
+    *   Steps:
+        1.  User is logged in and on the dashboard.
+        2.  Click the "Logout" button.
+    *   Expected Result: User is redirected to the login page.
+
+## Dashboard
+
+1.  **Dashboard Loads Successfully:**
+    *   Description: Verify the dashboard page loads without errors after successful login.
+    *   Steps:
+        1.  Log in with valid credentials.
+        2.  Navigate to the dashboard.
+    *   Expected Result: The dashboard page loads, displaying the expected UI elements.
+
+## Inventory Form
+
+1.  **Inventory Form Loads Successfully:**
+    *   Description: Verify the inventory form loads without errors.
+    *   Steps:
+        1.  Navigate to the inventory form.
+    *   Expected Result: The inventory form loads, displaying input fields for inventory data.
+
+2.  **Inventory Data Entry and Save:**
+    *   Description: Verify inventory data can be entered and saved correctly.
+    *   Steps:
+        1.  Navigate to the inventory form.
+        2.  Enter valid data into all required fields.
+        3.  Click the "Save" button.
+    *   Expected Result: A success message is displayed, and the entered data is saved.
