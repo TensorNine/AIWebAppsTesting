@@ -1,5 +1,11 @@
 AI-Powered Browser Agent: Automate Web UI Testing with Plain English
-Tired of complex, brittle code for web UI testing? This project introduces an AI-Powered Browser Agent that lets you automate web application testing using simple, plain English instructions. Leveraging the browser-use library and Google's Gemini AI, it transforms your natural language into precise browser actions, making testing accessible and efficient.
+Tired of complex, brittle code for web UI testing? This project introduces an AI-Powered Browser Agent that lets you automate web application testing using simple, plain English instructions. 
+Leveraging the browser-use library and Google's Gemini AI, it transforms your natural language into precise browser actions, making testing accessible and efficient.
+
+
+
+
+
 
 ✨ Features
 Plain English Test Scripts: Define test steps in a CSV file using natural language.
@@ -57,8 +63,11 @@ Configure Environment Variables:
 Create or update a .env file in your main project folder. This file will store your Google API Key and any site login credentials needed for testing.
 
 GOOGLE_API_KEY="YOUR_GOOGLE_GENERATIVE_AI_API_KEY_HERE"
+
 TEST_USERNAME="site_login_username" # Optional: if your tasks require login
+
 TEST_PASSWORD="site_login_password" # Optional: if your tasks require login
+
 ANONYMIZED_TELEMETRY=false # Set to true to send anonymous usage data to Browser-use
 
 Important: Replace the placeholder values. Never share your .env file!
